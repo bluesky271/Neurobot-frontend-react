@@ -2,13 +2,13 @@
 
 ## Follow the steps below to set up the environment for this project.
 
-## 1. Navigate to (https://nodejs.org/en/) and download the latest version of NodeJS and run through the installer.
+#### 1. Navigate to (https://nodejs.org/en/) and download the latest version of NodeJS and run through the installer.
 
-## 2. Navigate into the folder in the terminal where you want to create/clone this React project.
+##### 2. Navigate into the folder in the terminal where you want to create/clone this React project.
 
-## 3. Create a new directory or clone this project.
+#### 3. Create a new directory or clone this project.
 
-## 4. Set up the workspace in the directory to work with ReactJS using webpack.
+#### 4. Set up the workspace in the directory to work with ReactJS using webpack.
 
 ```    npm init     ```
 
@@ -17,17 +17,17 @@
 ###### This will create a file 'package.json' within your working directory.
 ###### This 'package.json' file is where you will manage the project dependencies which will be added later.
 
-## 5. Installing production dependencies
+#### 5. Installing production dependencies
 
 ```    npm install react react-dom --save   ```
 
-##6. Installing development dependencies
+#### 6 . Installing development dependencies
 
 ```    npm install webpack webpack-dev-server babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 babel-core --save-dev    ```
 
 ######This will modify the 'package.json' file and add the dependencies needed.
 
-## 7. Copy the code below and replace it in the 'package.json' file.
+#### 7. Copy the code below and replace it in the 'package.json' file.
 
 ```
       "scripts": {
@@ -37,6 +37,6 @@
       },
 ```
 
-## 8. Run 'npm start' within your directory to run webpack server in your terminal.
+#### 8. Run 'npm start' within your directory to run webpack server in your terminal.
 
-## 9. Open your browser and enter (http://localhost:8080/) to view the project in the browser.
+#### 9. Open your browser and enter (http://localhost:8080/) to view the project in the browser.
