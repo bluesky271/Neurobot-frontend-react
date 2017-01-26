@@ -39,11 +39,13 @@ export class RegisterForm extends React.Component {
                     <input className="form-control" placeholder="Last Name*"/>
                     <input className="form-control" placeholder="Email*"/>
                     <input className="form-control" placeholder="Password*"/>
-                    <br></br>
+                    <h6 className="form-signin-subheading">New password must have a minimum 8 characters including 1 uppercase and 1 numeric.
+</h6>
                     <input className="form-control" placeholder="Confirm Password*"/>
                     <a onClick={this.handleClick}>{link}</a>
                     {this.state.isToggleOn ? "" :
                         <div>
+                          <h2 className="form-signin-heading">Add your address details.</h2>
                           <input className="form-control" placeholder="Telephone number"/>
                           <input className="form-control" placeholder="Company"/>
                           <input className="form-control" placeholder="United Kingdom"/>
