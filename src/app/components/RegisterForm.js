@@ -26,7 +26,19 @@ export class RegisterForm extends React.Component {
                     <input className="form-control" placeholder="Password*"/>
                     <br></br>
                     <input className="form-control" placeholder="Confirm Password*"/>
-                    <a onClick={this.handleClick}>{this.state.isToggleOn ? "Click to enter your address details." : "Cancel"}</a>
+                    <a onClick={this.handleClick}>Click to enter your address details.</a>
+                    {this.state.isToggleOn ? "" :
+                        <div>
+                          <input className="form-control" placeholder="Telephone number"/>
+                          <input className="form-control" placeholder="Company"/>
+                          <input className="form-control" placeholder="United Kingdom"/>
+                          <input className="form-control" placeholder="Please enter an address."/>
+                          <input className="form-control" placeholder="Address1 (e.g. street number and street name)*"/>
+                          <input className="form-control" placeholder="Address2 (optional)"/>
+                          <input className="form-control" placeholder="City*"/>
+                          <input className="form-control" placeholder="Postal code*"/>
+                        </div>
+                    }
                     <button type="submit" className="btn btn-lg btn-primary btn-block">Join Neurobot</button>
             </form>
         );
