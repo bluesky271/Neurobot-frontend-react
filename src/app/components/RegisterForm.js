@@ -28,6 +28,13 @@ export class RegisterForm extends React.Component {
                 <h2 className="form-signin-heading">Become a member. Welcome to NeuroBot!</h2>
                 <h5 className="form-signin-subheading">Enter your email address below to get started.</h5>
                 <h6 className="form-signin-subheading">Fields marked * are mandatory.</h6>
+                <select id="title" className="form-control" required>
+                  <option className="select-option" label="Title" value>Title</option>
+                  <option className="select-option" label="Mrs" value="mrs">Mrs</option>
+                  <option className="select-option" label="Miss" value="miss">Miss</option>
+                  <option className="select-option" label="Ms" value="ms">Ms</option>
+                  <option className="select-option" label="Mr" value="mr">Mr</option>
+                </select>
                     <input className="form-control" placeholder="First Name*"/>
                     <input className="form-control" placeholder="Last Name*"/>
                     <input className="form-control" placeholder="Email*"/>
