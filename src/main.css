@@ -13,10 +13,12 @@ body {
   border: 1px solid white;
 }
 
-a,
-a:hover {
+a {
   text-decoration: underline;
   color: white;
+}
+a:hover {
+  color: #f58300;
 }
 
 .form-signin {
@@ -113,10 +115,10 @@ a:hover {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: orange;
+  color: #f58300;
 }
 .popup .close:hover {
-  color: orange;
+  color: #f58300;
 }
 .popup .content {
   max-height: 30%;
