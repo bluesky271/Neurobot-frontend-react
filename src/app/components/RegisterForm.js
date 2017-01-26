@@ -3,7 +3,11 @@ import React from "react";
 export class RegisterForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {isToggleOn: true};
+        this.state = {
+          isToggleOn: true,
+          initialLink: "Click to enter your address details.",
+          cancelLink: "Cancel."
+        };
 
         this.handleClick = this.handleClick.bind(this);
     }
@@ -15,6 +19,10 @@ export class RegisterForm extends React.Component {
       }
 
     render() {
+        let link = null;
+        if (this.state.isToggleOn) {link = this.state.initialLink;}
+        else {link = this.state.cancelLink;}
+
         return (
             <form className="form-signin">
                 <h2 className="form-signin-heading">Become a member. Welcome to NeuroBot!</h2>
@@ -26,7 +34,7 @@ export class RegisterForm extends React.Component {
                     <input className="form-control" placeholder="Password*"/>
                     <br></br>
                     <input className="form-control" placeholder="Confirm Password*"/>
-                    <a onClick={this.handleClick}>Click to enter your address details.</a>
+                    <a onClick={this.handleClick}>{link}</a>
                     {this.state.isToggleOn ? "" :
                         <div>
                           <input className="form-control" placeholder="Telephone number"/>
